@@ -226,10 +226,6 @@
    // Your code here
    ```
 
-4. Calculate a factorial of a large number using BigInt.
-   ```javascript
-   // Your code here
-   ```
 
 ## String Basics
 
@@ -339,16 +335,7 @@
    console.log(isNaN(result));   // true
    ```
 
-### Challenge Exercises:
-4. Demonstrate the differences between `null`, `undefined`, and `NaN`.
-   ```javascript
-   // Your code here
-   ```
 
-5. Show cases where `typeof` might give unexpected results with special values.
-   ```javascript
-   // Your code here
-   ```
 
 ## Comparison Operators
 
@@ -362,17 +349,6 @@
    ```
 
 2. Compare values of different types using `==` vs `===`.
-   ```javascript
-   // Your code here
-   ```
-
-### Challenge Exercises:
-3. Create examples that demonstrate unexpected behavior of `==` vs `===`.
-   ```javascript
-   // Your code here
-   ```
-
-4. Create a custom comparison function for complex objects.
    ```javascript
    // Your code here
    ```
@@ -405,32 +381,7 @@
    // Your code here
    ```
 
-## Extra Challenge Exercises
 
-1. Create a function that safely accesses nested properties of an object without throwing errors.
-   ```javascript
-   // Your code here
-   ```
-
-2. Implement a simple debounce function that limits how often a function can be called.
-   ```javascript
-   // Your code here
-   ```
-
-3. Write a function that detects the type of any JavaScript value with more accuracy than `typeof`.
-   ```javascript
-   // Your code here
-   ```
-
-4. Create a deep clone function for complex objects without using JSON methods.
-   ```javascript
-   // Your code here
-   ```
-
-5. Implement a function that formats numbers as currency with proper thousand separators and decimal places.
-   ```javascript
-   // Your code here
-   ```
 
 ---
 
