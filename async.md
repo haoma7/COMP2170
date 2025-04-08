@@ -243,6 +243,7 @@ fetchUser()
 Using Promise chaining, first fetch a user, then fetch their posts, and finally log the user's name and the number of posts.
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 function fetchUser() {
   return new Promise(function(resolve) {
@@ -291,6 +292,7 @@ fetchData()
 ```
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // The .catch() method handles any rejected promises in the chain,
 // similar to a try/catch block in synchronous code.
@@ -336,6 +338,7 @@ fetchData()
 ```
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // The .finally() method executes code regardless of whether the promise
 // was fulfilled or rejected. It's useful for cleanup operations.
@@ -362,6 +365,7 @@ fetchData()
 List at least three advantages of using Promises over traditional callbacks.
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```
 Advantages of Promises over callbacks:
 
@@ -386,6 +390,7 @@ Advantages of Promises over callbacks:
 What is the purpose of the `async` and `await` keywords in JavaScript? How do they relate to Promises?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```
 async/await purpose and relation to Promises:
 
@@ -426,6 +431,7 @@ displayUser();
 ```
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 function fetchUser() {
   return new Promise(function(resolve) {
@@ -461,6 +467,7 @@ async function fetchData() {
 ```
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // With async/await, we can use regular try/catch blocks for error handling
 
@@ -509,6 +516,7 @@ getUser(userId, function(user) {
 ```
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // Promise version
 function getUser(userId) {
@@ -572,6 +580,7 @@ getUserActivity();
 How would you wait for multiple Promises to complete using async/await?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 async function getMultipleData() {
   try {
@@ -619,6 +628,7 @@ async function getMultipleDataParallel() {
 Create a function called `delay` that returns a Promise which resolves after a specified time in milliseconds.
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 function delay(ms) {
   return new Promise(function(resolve) {
@@ -651,7 +661,8 @@ example();
 **Question:**  
 Write a general "promisify" function that converts any callback-based function to a Promise-based one. Assume the callback is always the last argument and follows the Node.js convention (error as first parameter).
 
-<details> <summary>💡 Click to reveal answer</summary>  
+<details> <summary>💡 Click to reveal answer</summary> 
+  
 ```js
 function promisify(fn) {
   return function(...args) {
@@ -702,6 +713,7 @@ readFilePromise('valid.txt')
 What happens when an error is thrown inside an async function? How should it be handled?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // When an error is thrown inside an async function, the Promise returned
 // by that function is rejected with that error.
@@ -748,6 +760,7 @@ async function noErrorHandling() {
 Compare how errors propagate in callback-based code versus Promise-based code.
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // In callback-based code:
 function operationWithCallback(callback) {
@@ -800,6 +813,7 @@ operationWithPromises()
 What is always returned from an async function? How do you access the value it returns?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // An async function always returns a Promise, even if you return a simple value.
 
@@ -839,6 +853,7 @@ doNothing().then(result => {
 Compare sequential execution (one after another) with parallel execution (all at once) of Promises. When would you use each approach?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // Helper functions that take 1 second each
 function task1() {
@@ -909,6 +924,7 @@ async function parallelTasks() {
 Give an example of when you would use the `.finally()` method in a Promise chain. What makes it useful?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // Common use case: loading indicator for data fetching
 
@@ -980,6 +996,7 @@ function getUserData() {
 ```
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // First, convert the callback-based functions to Promise-based
 function fetchUser() {
@@ -1036,6 +1053,7 @@ getUserData();
 Compare error handling in Promises (.then/.catch) versus async/await (try/catch). Which one do you find clearer?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```js
 // Promise-based error handling
 function promiseBasedFunction() {
@@ -1086,6 +1104,7 @@ async function asyncAwaitFunction() {
 In what situations would you still use callbacks instead of Promises or async/await in modern JavaScript code?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```
 When to use callbacks vs Promises vs async/await:
 
@@ -1119,6 +1138,7 @@ Use async/await when:
 Explain how Promises work with JavaScript's event loop. What happens when a Promise resolves?
 
 <details> <summary>💡 Click to reveal answer</summary>  
+  
 ```
 How Promises work with the event loop:
 
